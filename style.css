@@ -3,13 +3,12 @@
 }
 
 html {
-  padding: 0;
-  margin: 0;
   position: relative;
 }
 body {
-  height: 1000px;
-  background-color: lightgray;
+  background-color: rgb(200, 201, 202);
+  padding: 0;
+  margin: 0;
 }
 
 /*Header Region*/
@@ -18,6 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: lightgray;
+  width: 100%;
 }
 
 header img {
@@ -86,31 +86,142 @@ header img:hover {
   background-color: rgb(175, 172, 172);
 }
 /*Hero Content*/
+
 .hero {
-  height: 350px;
-  background-color: black;
-  color: aliceblue;
-}
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.hero-profile {
-  height: 250px;
-  width: 250px;
-  border: solid 1px white;
-}
-/*Main Content*/
-.main {
+  width: 100%;
+  height: 579px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+  background-image: url(images/update_bgpicture.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  gap: 10px;
 }
 
-.picturebox {
-  height: 200px;
-  width: 200px;
-  border: solid 1px;
-  border-radius: 50%;
+.hero div {
+  color: white;
+}
+
+.game-update {
+  font-size: 20px;
+  padding: 120px 0 30px 130px;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: bolder;
+  width: 500px;
+  padding: 0 0 0 130px;
+}
+
+.btn-learn {
+  background-color: rgb(163, 121, 15);
+  border: solid 1px white;
+  color: black;
+  width: 180px;
+  height: 50px;
+  font-size: 15px;
+  margin-top: 40px;
+  transition: all 0.2s;
+  margin-left: 130px;
+}
+
+.btn-learn:hover {
+  opacity: 0.5;
+}
+.hero-desc {
+  font-size: 20px;
+  flex-wrap: wrap;
+  width: 700px;
+  padding: 0 0 0 130px;
+}
+
+/*Main Content*/
+.main {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(234, 238, 243);
+}
+.main-welcome {
+  font-size: 20px;
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+
+.main-basic {
+  font-size: 50px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.main-learn-more {
+  font-size: 18px;
+  width: 800px;
+  text-align: center;
+}
+
+/*Backdrop*/
+.backdrop {
+  width: 100%;
+  height: 640px;
+  background-image: url(images/backdrop.avif);
+  background-position: center;
+  background-size: cover;
+}
+
+/*Champion Tag*/
+
+.champion-tag {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(234, 238, 243);
+}
+
+.champion-tag .txt1 {
+  font-size: 20px;
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+
+.champion-tag .txt2 {
+  font-size: 50px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.champion-tag .txt3 {
+  font-size: 18px;
+  width: 700px;
+  text-align: center;
+}
+
+/*Hero Grid*/
+.hero-grid {
+  margin: 100px;
+  row-gap: 20px;
+  column-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.hero-profile img {
+  width: 100%;
+}
+.hero-profile {
+  border: solid rgb(204, 28, 28) 3px;
+}
+
+.hero-name {
+  background-color: rgb(137, 137, 141);
+  text-align: center;
 }
 
 /*Footer*/
@@ -132,7 +243,6 @@ header img:hover {
   justify-content: center;
   gap: 10px;
   width: 100%;
-  padding: 10px;
   font-size: 20px;
   color: rgb(41, 39, 39);
 }
