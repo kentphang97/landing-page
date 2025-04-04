@@ -214,14 +214,33 @@ header img:hover {
 
 .hero-profile img {
   width: 100%;
+  display: block;
+  border-radius: 50% 50% 0 0;
 }
 .hero-profile {
-  border: solid rgb(204, 28, 28) 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-info {
+  display: grid;
+  grid-template-columns: 40px 1fr;
 }
 
 .hero-name {
   background-color: rgb(137, 137, 141);
+  color: rgb(200, 170, 110);
   text-align: center;
+  align-self: center;
+  background-color: rgb(9, 20, 40);
+  border: solid 1.5px rgb(200, 170, 110);
+  padding: 12px 0 10px 0px;
+}
+
+.hero-roles img {
+  width: 40px;
+  background-color: rgb(9, 20, 40);
+  border: solid 1.5px rgb(200, 170, 110);
 }
 
 /*Footer*/
